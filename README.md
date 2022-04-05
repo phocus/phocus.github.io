@@ -4,58 +4,64 @@ Is a color scheme that comes with clean, opinionated and technical debt free imp
 
 ## Colors
 
-The colors are grouped into three different types:
+The colors are separated into two groups:
 
 ### Surface colors
 
-For interface backgrounds that fill most of the area available and only have little contrast to each other. (roughly 1.07:1 contrast between neighboring colors)
+Interface backgrounds that fill most of the area available and only have little contrast to each other.
 
-| | Name | HEX | RGB(A) | HSL(A) |
+| | Type | HEX | RGB | HSL |
 |  - |  - |  - |  - |  - |
-| ![one](colors/one.png) | one | `#0A0A0A` | `rgb(10, 10, 10)` | `hsl(0, 0%, 3.9%)` |
-| ![two](colors/two.png) | two | `#151414` | `rgb(21, 20, 20)` | `hsl(0, 2.4%, 8%)` |
-| ![three](colors/three.png) | three | `#1C1C1C` | `rgb(28, 28, 28)` | `hsl(0, 0%, 11%)` |
-| ![four](colors/four.png) | four | `#242424` | `rgb(36, 36, 36)` | `hsl(0, 0%, 14.1%)` |
-| ![five](colors/five.png) | five | `#2B2B2B` | `rgb(43, 43, 43)` | `hsl(0, 0%, 16.9%)` |
-| ![elevate](colors/elevate.png) | elevate | `#FFFFFF0F` | `rgba(255, 255, 255, 0.06)` | `hsla(0, 0%, 100%, 0.06)` |
+| ![surface strongest](swatch/surface/strongest.png) | strongest | `#0A0A0A` | `rgb(10, 10, 10)` | `hsl(0, 0%, 4%)` |
+| ![surface strong](swatch/surface/strong.png) | strong | `#141414` | `rgb(20, 20, 20)` | `hsl(0, 0%, 8%)` |
+| ![surface moderate](swatch/surface/moderate.png) | moderate | `#1C1C1C` | `rgb(28, 28, 28)` | `hsl(0, 0%, 11%)` |
+| ![surface weak](swatch/surface/weak.png) | weak | `#222222` | `rgb(34, 34, 34)` | `hsl(0, 0%, 13%)` |
+| ![surface weakest](swatch/surface/weakest.png) | weakest | `#282828` | `rgb(40, 40, 40)` | `hsl(0, 0%, 16%)` |
 
-The `elevate` color is a very transparent color from the opposite lightness spectrum than the rest, that can be used to create a highlight on any of the other surface colors. This can be used for form elements or hover states.
-
-### Line colors
-
-Neutral light and dark colors used for typography, icons, borders and other fine lines.
-
-| | Name | Type | HEX | RGB(A) | HSL(A) |
-| - | - | - | - | - | - |
-| ![light strong](colors/light_strong.png) | light | strong | `#FFFFFF` | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)` |
-| ![light normal](colors/light_normal.png) | light | normal | `#FFFFFFEE` | `rgba(255, 255, 255, 0.93)` | `hsla(0, 0%, 100%, 0.93)` |
-| ![light weak](colors/light_weak.png) | light | weak | `#FFFFFF5C` | `rgba(255, 255, 255, 0.36)` | `hsla(0, 0%, 100%, 0.36)` |
-| ![light mute](colors/light_mute.png) | light | mute | `#FFFFFF19` | `rgba(255, 255, 255, 0.1)` | `hsla(0, 0%, 100%, 0.1)` |
-| ![dark strong](colors/dark_strong.png) | dark | strong | `#000000` | `rgb(0, 0, 0)` | `hsl(0, 0%, 0%)` |
-| ![dark normal](colors/dark_normal.png) | dark | normal | `#000000E6` | `rgba(0, 0, 0, 0.9)` | `hsla(0, 0%, 0%, 0.9)` |
-| ![dark weak](colors/dark_weak.png) | dark | weak | `#0000004C` | `rgba(0, 0, 0, 0.3)` | `hsla(0, 0%, 0%, 0.3)` |
-| ![dark mute](colors/dark_mute.png) | dark | mute | `#00000014` | `rgba(0, 0, 0, 0.082)` | `hsla(0, 0%, 0%, 0.082)` |
-
+> adjacent surface colors have roughly a contrast of 1.07:1
 
 ### Accent colors
 
-Vibrant colors used as both surface and line colors, when something needs to stand out. Light types have a 1.2:1 contrast to their corresponding normal version.
+Monochromatic color sets used to elevate or emphasize things, such as element surfaces, texts, lines and icons.
 
-| | Name | Type | HEX | RGB(A) | HSL(A) |
+#### Monochrome accent colors
+
+Are used to elevate **neutral** things depending on their importance.
+
+| | Name | Type | HEX | RGB | HSL |
 | - | - | - | - | - | - |
-| ![red normal](colors/red_normal.png) | red | normal | `#DA5858` | `rgb(218, 88, 88)` | `hsl(0, 63.7%, 60%)` |
-| ![red light](colors/red_light.png) | red | light | `#E36D6D` | `rgb(227, 109, 109)` | `hsl(0, 67.8%, 65.9%)` |
-| ![orange normal](colors/orange_normal.png) | orange | normal | `#ED9454` | `rgb(237, 148, 84)` | `hsl(25, 81%, 62.9%)` |
-| ![orange light](colors/orange_light.png) | orange | light | `#FCA669` | `rgb(252, 166, 105)` | `hsl(25, 96.1%, 70%)` |
-| ![yellow normal](colors/yellow_normal.png) | yellow | normal | `#E8CA5E` | `rgb(232, 202, 94)` | `hsl(47, 75%, 63.9%)` |
-| ![yellow light](colors/yellow_light.png) | yellow | light | `#FADD75` | `rgb(250, 221, 117)` | `hsl(47, 93%, 72%)` |
-| ![green normal](colors/green_normal.png) | green | normal | `#3FC661` | `rgb(63, 198, 97)` | `hsl(135, 54.2%, 51.2%)` |
-| ![green light](colors/green_light.png) | green | light | `#61D67E` | `rgb(97, 214, 126)` | `hsl(135, 58.8%, 61%)` |
-| ![cyan normal](colors/cyan_normal.png) | cyan | normal | `#5CD8E6` | `rgb(92, 216, 230)` | `hsl(186, 73.4%, 63.1%)` |
-| ![cyan light](colors/cyan_light.png) | cyan | light | `#7EEAF6` | `rgb(126, 234, 246)` | `hsl(186, 87%, 72.9%)` |
-| ![blue normal](colors/blue_normal.png) | blue | normal | `#497EE9` | `rgb(73, 126, 233)` | `hsl(220, 78.4%, 60%)` |
-| ![blue light](colors/blue_light.png) | blue | light | `#5D8DEE` | `rgb(93, 141, 238)` | `hsl(220, 81%, 64.9%)` |
-| ![purple normal](colors/purple_normal.png) | purple | normal | `#7154F2` | `rgb(113, 84, 242)` | `hsl(251, 85.9%, 63.9%)` |
-| ![purple light](colors/purple_light.png) | purple | light | `#8066F5` | `rgb(128, 102, 245)` | `hsl(251, 87.7%, 68%)` |
-| ![pink normal](colors/pink_normal.png) | pink | normal | `#D56CC3` | `rgb(213, 108, 195)` | `hsl(310, 55.6%, 62.9%)` |
-| ![pink light](colors/pink_light.png) | pink | light | `#DF81CF` | `rgb(223, 129, 207)` | `hsl(310, 59.5%, 69%)` |
+| ![accent monochrome white strongest](swatch/accent/monochrome/white/strongest.png) | white | strongest | `#FFFFFF` | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)` |
+| ![accent monochrome white strong](swatch/accent/monochrome/white/strong.png) | white | strong | `#FFFFFFDE` | `rgba(255, 255, 255, 0.87)` | `hsla(0, 0%, 100%, 0.87)` |
+| ![accent monochrome white moderate](swatch/accent/monochrome/white/moderate.png) | white | moderate | `#FFFFFF57` | `rgba(255, 255, 255, 0.34)` | `hsla(0, 0%, 100%, 0.34)` |
+| ![accent monochrome white weak](swatch/accent/monochrome/white/weak.png) | white | weak | `#FFFFFF23` | `rgba(255, 255, 255, 0.14)` | `hsla(0, 0%, 100%, 0.14)` |
+| ![accent monochrome white weakest](swatch/accent/monochrome/white/weakest.png) | white | weakest | `#FFFFFF0F` | `rgba(255, 255, 255, 0.06)` | `hsla(0, 0%, 100%, 0.06)` |
+| ![accent monochrome black strongest](swatch/accent/monochrome/black/strongest.png) | black | strongest | `#000000` | `rgb(0, 0, 0)` | `hsl(0, 0%, 0%)` |
+| ![accent monochrome black strong](swatch/accent/monochrome/black/strong.png) | black | strong | `#000000DE` | `rgba(0, 0, 0, 0.87)` | `hsla(0, 0%, 0%, 0.87)` |
+| ![accent monochrome black moderate](swatch/accent/monochrome/black/moderate.png) | black | moderate | `#0000006B` | `rgba(0, 0, 0, 0.42)` | `hsla(0, 0%, 0%, 0.42)` |
+| ![accent monochrome black weak](swatch/accent/monochrome/black/weak.png) | black | weak | `#00000026` | `rgba(0, 0, 0, 0.15)` | `hsla(0, 0%, 0%, 0.15)` |
+| ![accent monochrome black weakest](swatch/accent/monochrome/black/weakest.png) | black | weakest | `#0000000F` | `rgba(0, 0, 0, 0.06)` | `hsla(0, 0%, 0%, 0.06)` |
+
+#### Saturated accent colors
+
+Are used to elevate **special** and **important** things.
+
+| | Name | Type | HEX | RGB | HSL |
+| - | - | - | - | - | - |
+| ![accent colored red normal](swatch/accent/colored/red/normal.png) | red | normal | `#DA5858` | `rgb(218, 88, 88)` | `hsl(0, 64%, 60%)` |
+| ![accent colored red light](swatch/accent/colored/red/light.png) | red | light | `#E36D6D` | `rgb(227, 109, 109)` | `hsl(0, 68%, 66%)` |
+| ![accent colored orange normal](swatch/accent/colored/orange/normal.png) | orange | normal | `#ED9454` | `rgb(237, 148, 84)` | `hsl(25, 81%, 63%)` |
+| ![accent colored orange light](swatch/accent/colored/orange/light.png) | orange | light | `#FCA669` | `rgb(252, 166, 105)` | `hsl(25, 96%, 70%)` |
+| ![accent colored yellow normal](swatch/accent/colored/yellow/normal.png) | yellow | normal | `#E8CA5E` | `rgb(232, 202, 94)` | `hsl(47, 75%, 64%)` |
+| ![accent colored yellow light](swatch/accent/colored/yellow/light.png) | yellow | light | `#FADD75` | `rgb(250, 221, 117)` | `hsl(47, 93%, 72%)` |
+| ![accent colored green normal](swatch/accent/colored/green/normal.png) | green | normal | `#3FC661` | `rgb(63, 198, 97)` | `hsl(135, 54%, 51%)` |
+| ![accent colored green light](swatch/accent/colored/green/light.png) | green | light | `#61D67E` | `rgb(97, 214, 126)` | `hsl(135, 59%, 61%)` |
+| ![accent colored cyan normal](swatch/accent/colored/cyan/normal.png) | cyan | normal | `#5CD8E6` | `rgb(92, 216, 230)` | `hsl(186, 73%, 63%)` |
+| ![accent colored cyan light](swatch/accent/colored/cyan/light.png) | cyan | light | `#7EEAF6` | `rgb(126, 234, 246)` | `hsl(186, 87%, 73%)` |
+| ![accent colored blue normal](swatch/accent/colored/blue/normal.png) | blue | normal | `#497EE9` | `rgb(73, 126, 233)` | `hsl(220, 78%, 60%)` |
+| ![accent colored blue light](swatch/accent/colored/blue/light.png) | blue | light | `#5D8DEE` | `rgb(93, 141, 238)` | `hsl(220, 81%, 65%)` |
+| ![accent colored purple normal](swatch/accent/colored/purple/normal.png) | purple | normal | `#7154F2` | `rgb(113, 84, 242)` | `hsl(251, 86%, 64%)` |
+| ![accent colored purple light](swatch/accent/colored/purple/light.png) | purple | light | `#8066F5` | `rgb(128, 102, 245)` | `hsl(251, 88%, 68%)` |
+| ![accent colored pink normal](swatch/accent/colored/pink/normal.png) | pink | normal | `#D56CC3` | `rgb(213, 108, 195)` | `hsl(310, 56%, 63%)` |
+| ![accent colored pink light](swatch/accent/colored/pink/light.png) | pink | light | `#DF81CF` | `rgb(223, 129, 207)` | `hsl(310, 59%, 69%)` |
+
+> light and normal color types have roughly a contrast of 1.2:1
